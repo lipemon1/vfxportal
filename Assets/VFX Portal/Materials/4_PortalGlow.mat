@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 2_PortalVortice
-  m_Shader: {fileID: 4800000, guid: b64685d799203b745a86a5b6e7b09e92, type: 3}
+  m_Name: 4_PortalGlow
+  m_Shader: {fileID: 4800000, guid: 0799d447c7ff1a94fbb08743191abe1e, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -40,7 +40,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 792bf6b5f4addf04cb64b3afe1d21951, type: 3}
+        m_Texture: {fileID: 2800000, guid: 3d31f8da157003f40967fd0be7072b40, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -63,17 +63,15 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _Intencity: 1
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
-    - _Speed: 1
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 1, g: 0, b: 0.14817429, a: 1}
+    - _Color: {r: 1, g: 0, b: 0.87729645, a: 0.31764707}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

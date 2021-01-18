@@ -4,6 +4,7 @@
     {
         _MainTex ("Texture", 2D) = "white" {}
 		_Speed ("Speed", Range(0, 1)) = 0.5
+		_Color("Color", Color) = (1, 1, 1, 1)
     }
     SubShader
     {
@@ -40,6 +41,7 @@
             sampler2D _MainTex;
             float4 _MainTex_ST;
 			float _Speed;
+			float4 _Color;
 
             v2f vert (appdata v)
             {
@@ -56,7 +58,7 @@
                 fixed4 col = tex2D(_MainTex, i.uv + (_Time.y * _Speed));
                 // apply fog
                 UNITY_APPLY_FOG(i.fogCoord, col);
-                return col;
+                return col * _Color;
             }
             ENDCG
         }
